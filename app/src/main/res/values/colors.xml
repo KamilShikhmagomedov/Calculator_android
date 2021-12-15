@@ -8,15 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="blackStart">#060607</color>
-    <color name="blueBlack">#111f28</color>
     <color name="greyEnd">#484e52</color>
     <color name="greyAccent">#afb9c5</color>
     <color name="tanAccent">#e3cdb3</color>
-    <color name="redBackground">#5a020b</color>
-    <color name="redAccent">#ff0000</color>
-    <color name="greenBackground">#013300</color>
-    <color name="greenAccent">#2ffd64</color>
-    <color name="purpleBackground">#330133</color>
-    <color name="purpleAccent">#de00de</color>
+    <color name="redBackground">#A52A36</color>
+    <color name="redAccent">#C72222</color>
+    <color name="greenBackground">#2C6A2A</color>
+    <color name="greenAccent">#175A28</color>
+    <color name="purpleBackground">#450A99</color>
 </resources>
