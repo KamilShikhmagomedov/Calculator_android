@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/white_theme_background"
+    android:background="?attr/background"
     tools:context=".MainActivity">
 
     <TextView
@@ -46,17 +47,20 @@
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent">
 
+        <Switch
+            android:id="@+id/switchTheme"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="@string/theme_mode"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml,UsingOnClickInXml" />
+
         <Button
             android:id="@+id/button16"
             android:onClick="threeBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/threeText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button15"
             app:layout_constraintTop_toBottomOf="@+id/button12"
             tools:ignore="UsingOnClickInXml" />
@@ -64,14 +68,8 @@
         <Button
             android:id="@+id/button15"
             android:onClick="twoBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/twoText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button14"
             app:layout_constraintTop_toBottomOf="@+id/button11"
             tools:ignore="UsingOnClickInXml" />
@@ -79,13 +77,8 @@
         <Button
             android:id="@+id/button14"
             android:onClick="oneBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/oneText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button10"
             tools:ignore="UsingOnClickInXml" />
@@ -93,14 +86,8 @@
         <Button
             android:id="@+id/button5"
             android:onClick="divideBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/operation_button_background"
             android:text="@string/divideText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/OperationButtonStyle"
             app:layout_constraintStart_toEndOf="@+id/button4"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:ignore="UsingOnClickInXml" />
@@ -108,14 +95,8 @@
         <Button
             android:id="@+id/button3"
             android:onClick="openBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/parenthesesOpenText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:ignore="UsingOnClickInXml" />
@@ -123,13 +104,8 @@
         <Button
             android:id="@+id/button2"
             android:onClick="clearBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/clear_button_background"
             android:text="@string/clearText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/ClearButtonStyle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:ignore="UsingOnClickInXml" />
@@ -137,13 +113,8 @@
         <Button
             android:id="@+id/button6"
             android:onClick="sevenBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/sevenText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2"
             tools:ignore="UsingOnClickInXml" />
@@ -151,14 +122,8 @@
         <Button
             android:id="@+id/button7"
             android:onClick="eightBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/eightText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button6"
             app:layout_constraintTop_toBottomOf="@+id/button3"
             tools:ignore="UsingOnClickInXml" />
@@ -166,14 +131,8 @@
         <Button
             android:id="@+id/button8"
             android:onClick="nineBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/nineText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button7"
             app:layout_constraintTop_toBottomOf="@+id/button4"
             tools:ignore="UsingOnClickInXml" />
@@ -181,14 +140,8 @@
         <Button
             android:id="@+id/button9"
             android:onClick="multiplyBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/operation_button_background"
             android:text="@string/multiplyText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/OperationButtonStyle"
             app:layout_constraintStart_toEndOf="@+id/button8"
             app:layout_constraintTop_toBottomOf="@+id/button5"
             tools:ignore="UsingOnClickInXml" />
@@ -196,13 +149,8 @@
         <Button
             android:id="@+id/button10"
             android:onClick="fourBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/fourText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button6"
             tools:ignore="UsingOnClickInXml" />
@@ -210,14 +158,8 @@
         <Button
             android:id="@+id/button11"
             android:onClick="fiveBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/fiveText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button10"
             app:layout_constraintTop_toBottomOf="@+id/button7"
             tools:ignore="UsingOnClickInXml" />
@@ -225,14 +167,8 @@
         <Button
             android:id="@+id/button12"
             android:onClick="sixBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/sixText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button11"
             app:layout_constraintTop_toBottomOf="@+id/button8"
             tools:ignore="UsingOnClickInXml" />
@@ -240,14 +176,8 @@
         <Button
             android:id="@+id/button13"
             android:onClick="subtractBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/operation_button_background"
             android:text="@string/subtractText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/OperationButtonStyle"
             app:layout_constraintStart_toEndOf="@+id/button12"
             app:layout_constraintTop_toBottomOf="@+id/button9"
             tools:ignore="UsingOnClickInXml" />
@@ -255,14 +185,8 @@
         <Button
             android:id="@+id/button4"
             android:onClick="closeBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/parenthesesCloseText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button3"
             app:layout_constraintTop_toBottomOf="@+id/button"
             tools:ignore="UsingOnClickInXml" />
@@ -270,11 +194,9 @@
         <ImageButton
             android:id="@+id/button"
             android:onClick="backspaceBTNPush"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:background="@drawable/button_background"
             android:contentDescription="@string/backspace"
-            android:textColor="@color/tanAccent"
+            style="@style/DigitalStyle"
+            android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="@+id/button5"
             app:layout_constraintStart_toStartOf="@+id/button5"
             app:layout_constraintTop_toTopOf="parent"
@@ -284,14 +206,8 @@
         <Button
             android:id="@+id/button17"
             android:onClick="sumBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/operation_button_background"
             android:text="@string/sumText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/OperationButtonStyle"
             app:layout_constraintStart_toEndOf="@+id/button16"
             app:layout_constraintTop_toBottomOf="@+id/button13"
             tools:ignore="UsingOnClickInXml" />
@@ -299,13 +215,8 @@
         <Button
             android:id="@+id/button18"
             android:onClick="zeroBTNPush"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/nullText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/ZeroButtonStyle"
             app:layout_constraintEnd_toEndOf="@+id/button15"
             app:layout_constraintStart_toStartOf="@+id/button14"
             app:layout_constraintTop_toBottomOf="@+id/button14"
@@ -314,14 +225,8 @@
         <Button
             android:id="@+id/button19"
             android:onClick="decimalBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
             android:text="@string/decimalText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/DigitalStyle"
             app:layout_constraintStart_toEndOf="@+id/button18"
             app:layout_constraintTop_toBottomOf="@+id/button16"
             tools:ignore="UsingOnClickInXml" />
@@ -329,14 +234,8 @@
         <Button
             android:id="@+id/button20"
             android:onClick="equalBTNPush"
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/equals_button_background"
             android:text="@string/equalsText"
-            android:textColor="@color/tanAccent"
-            android:textSize="26sp"
+            style="@style/EqualsButtonStyle"
             app:layout_constraintStart_toEndOf="@+id/button19"
             app:layout_constraintTop_toBottomOf="@+id/button17"
             tools:ignore="UsingOnClickInXml" />

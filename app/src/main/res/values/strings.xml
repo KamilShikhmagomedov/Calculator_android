@@ -39,4 +39,5 @@
     <string name="isPrimeFunctionText">prime</string>
 
     <string name="backspace"> </string>
+    <string name="theme_mode">Theme \n mode</string>
 </resources>
