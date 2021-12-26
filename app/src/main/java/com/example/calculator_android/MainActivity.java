@@ -8,10 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import org.mariuszgromada.math.mxparser.Expression;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -134,8 +135,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void equalBTNPush(View view){
         String userExp = display.getText().toString();
-        resultCalculation.setText(userExp);
-        // Здесь будет функция для нажатия кнопки '='
+        userExp = userExp.replaceAll("÷", "/");
+        userExp = userExp.replaceAll("×", "*");
+        Expression exp = new Expression(userExp);
+        String resultExp = String.valueOf(exp.calculate());
+        resultCalculation.setText(resultExp);
+        display.setSelection(userExp.length());
     }
     
 
